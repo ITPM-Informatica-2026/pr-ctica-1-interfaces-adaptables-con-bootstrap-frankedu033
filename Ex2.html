@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshCart App Store</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+
+:root{
+--fresh-green:#22c55e;
+--fresh-green-dark:#15803d;
+--fresh-soft:#ecfdf5;
+--fresh-line:#bbf7d0;
+--fresh-dark:#0f172a;
+}
+
+body{
+margin:0;
+font-family:"Trebuchet MS","Segoe UI",sans-serif;
+background:linear-gradient(160deg,#f8fafc,#e2f5ec);
+color:#1f2937;
+}
+
+/* HERO */
+
+.app-hero{
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+border-radius:20px;
+padding:2.2rem 1.25rem;
+box-shadow:0 12px 24px rgba(0,0,0,0.18);
+}
+
+.app-hero h1{
+font-size:2rem;
+font-weight:800;
+margin-bottom:0.4rem;
+}
+
+.hero-subtitle{
+margin:0;
+font-size:1rem;
+font-weight:500;
+color:#eafff2;
+}
+
+/* TELEFONO */
+
+.phone-mockup{
+width:230px;
+height:450px;
+background:#0f172a;
+border-radius:40px;
+padding:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.35);
+position:relative;
+border:3px solid #1f2937;
+}
+
+/* notch del celular */
+
+.phone-mockup::before{
+content:"";
+position:absolute;
+top:6px;
+left:50%;
+transform:translateX(-50%);
+width:100px;
+height:18px;
+background:#020617;
+border-radius:0 0 15px 15px;
+z-index:2;
+}
+
+.phone-screen{
+height:100%;
+width:100%;
+border-radius:24px;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+gap:6px;
+background:#dcfce7;
+}
+
+.phone-screen img{
+width:100%;
+height:33.33%;
+object-fit:cover;
+}
+
+
+.contact-input{
+flex:1;
+height:44px;
+border-radius:999px;
+border:1px solid #bbf7d0;
+padding:0 1rem;
+background:white;
+}
+
+.verify-btn{
+height:44px;
+border:0;
+border-radius:999px;
+padding:0 1rem;
+font-weight:700;
+background:#0f172a;
+color:white;
+}
+
+.verify-btn:hover{
+background:#020617;
+}
+
+
+.store-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:0.55rem;
+min-width:170px;
+border-radius:10px;
+padding:0.65rem 1rem;
+font-weight:700;
+text-decoration:none;
+transition:0.2s;
+}
+
+.store-btn-apple{
+background:#111827;
+color:white;
+}
+
+.store-btn-google{
+background:#22c55e;
+color:white;
+}
+
+.store-btn:hover{
+transform:translateY(-2px);
+color:white;
+}
+
+.benefit-card{
+width:100%;
+border:1px solid var(--fresh-line);
+border-radius:14px;
+background:white;
+box-shadow:0 8px 16px rgba(0,0,0,0.06);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:1.2rem;
+min-height:140px;
+transition:0.25s;
+}
+
+.benefit-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.12);
+}
+
+.benefit-content{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:6px;
+}
+
+.benefit-icon{
+width:40px;
+}
+
+.benefit-text{
+font-weight:700;
+}
+
+.benefit-desc{
+font-size:0.9rem;
+color:#4b5563;
+margin:0;
+}
+
+
+@media (max-width:575px){
+
+.phone-mockup{
+width:180px;
+height:340px;
+}
+
+.store-btn{
+width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="container py-4 py-md-5">
+
+<header class="app-hero">
+
+<div class="row align-items-center">
+
+<div class="col-md-5 text-center mb-3">
+
+<div class="phone-mockup">
+
+<div class="phone-screen">
+
+<img src="https://img2.s3wfg.com/web/img/images_uploaded/0/2/ep_archivo_-_detalle_de_un_puesto_de_frutas_y_verduras_de_un_mercado_de_abastos_780x440.jpg?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://recetinas.com/wp-content/uploads/2022/07/licuados.jpg?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://img.pikbest.com/backgrounds/20241223/a-picture-of-vegetables-and-fruits-with-a-blue-background_11290371.jpg!w700wp?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-7">
+
+<h1>Obtenga La Aplicación FreshCart</h1>
+
+<p class="hero-subtitle">
+Compra rápido, aprovecha ofertas exclusivas y recibe todo en casa.
+</p>
+
+<br>
+
+<input type="text" class="contact-input" placeholder="Correo Electronico">
+
+<button class="verify-btn">Enviar codigo de verificacion</button>
+
+<br><br>
+
+<h2>Compre más rápido y fácil</h2>
+
+<p>Descargue la aplicación para obtener acceso exclusivo a ofertas y promociones</p>
+
+<a href="#" class="store-btn store-btn-apple">
+Descargar en App Store
+</a>
+
+<a href="#" class="store-btn store-btn-google">
+Disponible en Google Play
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<br>
+
+
+<section>
+
+<h2 class="h4 font-weight-bold mb-3">Beneficios destacados</h2>
+
+<div class="row">
+
+<div class="col-md-3 col-sm-6 mb-3">
+
+<div class="benefit-card">
+
+<div class="benefit-content">
+
+<img class="benefit-icon" src="https://img.icons8.com/color/96/time.png" alt="icono tiempo">
+
+<span class="benefit-text">Compra en minutos</span>
+
+<p class="benefit-desc">
+Realiza tu pedido velozmente y recibe productos frescos en poco tiempo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-sm-6 mb-3">
+
+<div class="benefit-card">
+
+<div class="benefit-content">
+
+<img class="benefit-icon" src="https://img.icons8.com/color/96/discount.png">
+
+<span class="benefit-text">Ofertas especiales</span>
+
+<p class="benefit-desc">
+Aprovecha descuentos imperdibles y promociones en tus productos de preferencia.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-sm-6 mb-3">
+
+<div class="benefit-card">
+
+<div class="benefit-content">
+
+<img class="benefit-icon" src="https://img.icons8.com/color/96/shopping-cart.png">
+
+<span class="benefit-text">Funciones inteligentes</span>
+
+<p class="benefit-desc">
+Busca productos fácil, y compara precios.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-sm-6 mb-3">
+
+<div class="benefit-card">
+
+<div class="benefit-content">
+
+<img class="benefit-icon" src="https://img.icons8.com/color/96/vegetarian-food.png">
+
+<span class="benefit-text">Descubre nuevos productos</span>
+
+<p class="benefit-desc">
+Encuentra recomendaciones para ti según tus gustos.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>
