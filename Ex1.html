@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FreshCart - Pagina Principal</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+    :root{
+--fresh-primary:#0ea5e9;
+--fresh-dark:#0f172a;
+--fresh-accent:#22c55e;
+--fresh-soft:#ecfdf5;
+--fresh-line:#bbf7d0;
+}
+
+body{
+font-family:"Segoe UI",sans-serif;
+background:linear-gradient(160deg,#f8fafc,#e2f5ec);
+color:#1f2937;
+}
+
+/* HEADER */
+
+.hero-header{
+background:linear-gradient(135deg,var(--fresh-primary),#22c55e);
+color:white;
+border-radius:18px;
+padding:2.5rem 2rem;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.hero-title{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.title-icon{
+width:50px;
+height:50px;
+object-fit:contain;
+}
+
+.btn-download-app{
+background:#22c55e;
+border:none;
+color:white;
+font-weight:600;
+padding:10px 20px;
+border-radius:30px;
+}
+
+.btn-download-app:hover{
+background:#16a34a;
+}
+
+/* PROMOCIONES */
+
+.promo-row{
+display:flex;
+flex-wrap:wrap;
+}
+
+.promo-card{
+border:none;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 8px 18px rgba(0,0,0,0.12);
+height:100%;
+}
+
+.promo-image{
+height:170px;
+width:100%;
+object-fit:cover;
+}
+
+.btn-freshcart{
+background:var(--fresh-dark);
+color:white;
+border-radius:25px;
+}
+
+.btn-freshcart:hover{
+background:#020617;
+}
+
+/* CATEGORIAS */
+
+.categories-box{
+background:white;
+border-radius:16px;
+border:1px solid var(--fresh-line);
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.categories-grid{
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:nowrap;
+}
+
+.category-item{
+flex:1;
+}
+
+.category-pill{
+background:var(--fresh-soft);
+border:1px solid var(--fresh-line);
+border-radius:14px;
+padding:15px;
+font-weight:600;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.category-image{
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid var(--fresh-primary);
+}
+
+.category-pill:hover{
+background:#dcfce7;
+transform:scale(1.05);
+transition:0.2s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.categories-grid{
+flex-wrap:wrap;
+}
+
+.promo-image{
+height:150px;
+}
+
+}
+
+</style>
+</head>
+<body>
+<main class="container py-4 py-md-5">
+
+<header class="hero-header mb-4">
+
+<div class="hero-top">
+
+<h1 class="hero-title mb-0">
+<img src="img/canasta.png" class="title-icon">
+<span>Bienvenidos a FreshCart</span>
+</h1>
+
+<a href="#" class="btn btn-download-app">
+Descarga la aplicacion FreshCart
+</a>
+
+</div>
+
+<p class="lead mb-0">
+Productos frescos y saludables directo a tu puerta, a un clic de distancia.
+</p>
+
+</header>
+
+
+<section class="mb-5">
+
+<h2 class="h3 mb-3 text-dark">Ofertas destacadas</h2>
+
+<div class="promo-row">
+
+<div class="promo-col col-12 col-md-6 col-lg-4">
+
+<article class="card promo-card">
+
+<img src="https://oriflameafiliate.com/wp-content/uploads/2025/12/cosmeticos-naturales.jpg" class="promo-image">
+
+<div class="card-body">
+
+<h3 class="h5 card-title">
+10% de reembolso en cuidado personal
+</h3>
+
+<p class="card-text text-muted">
+Activa tu descuento: CARE12.
+</p>
+
+<a href="#" class="btn btn-freshcart">
+Comprar ahora
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="promo-col col-12 col-md-6 col-lg-4">
+
+<article class="card promo-card">
+
+<img src="https://tse2.mm.bing.net/th/id/OIP.lNe0KwojtDw_JiiewDM6bgHaEK?w=1024&h=575&rs=1&pid=ImgDetMain&o=7&rm=3" class="promo-image">
+
+<div class="card-body">
+
+<h3 class="h5 card-title">
+Di sí a la frescura de temporada
+</h3>
+
+<p class="card-text text-muted">
+Frutas y verduras frescas todos los días.
+</p>
+
+<a href="#" class="btn btn-freshcart">
+Comprar ahora
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="promo-col col-12 col-md-6 col-lg-4">
+
+<article class="card promo-card">
+
+<img src="https://i0.wp.com/wortenes.wpcomstaging.com/wp-content/uploads/2025/07/Como-hacer-helados.webp?fit=513%2C396&ssl=1" class="promo-image">
+
+<div class="card-body">
+
+<h3 class="h5 card-title">
+En caso de duda, come helado
+</h3>
+
+<p class="card-text text-muted">
+Sabores que refrescan tu verano.
+</p>
+
+<a href="#" class="btn btn-freshcart">
+Comprar ahora
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="categories-box p-3 p-md-4">
+
+<h2 class="h3 mb-3 text-dark">Comprar por categoría</h2>
+
+<div class="categories-grid">
+
+<div class="category-item">
+
+<div class="category-pill">
+
+<img src="https://www.noticiasneo.com/sites/default/files/inline-images/bebidasNAok.png" class="category-image">
+
+<span>Bebidas</span>
+
+</div>
+
+</div>
+
+
+<div class="category-item">
+
+<div class="category-pill">
+
+<img src="https://i.etsystatic.com/29356732/r/il/34dc4c/5159352621/il_570xN.5159352621_guwf.jpg" class="category-image">
+
+<span>Snacks y dulces</span>
+
+</div>
+
+</div>
+
+
+<div class="category-item">
+
+<div class="category-pill">
+
+<img src="https://pixnio.com/free-images/2021/02/15/2021-02-15-10-30-33-1800x1200.jpg" class="category-image">
+
+<span>Panaderia y galletas</span>
+
+</div>
+
+</div>
+
+
+<div class="category-item">
+
+<div class="category-pill">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWnLEAVNKHvwUEJzrzu83S0MQA3rrmIpFckQ&s" class="category-image">
+
+<span>Cuidado saludable</span>
+
+</div>
+
+</div>
+
+
+<div class="category-item">
+
+<div class="category-pill">
+
+<img src="https://cocina-casera.com/wp-content/uploads/2015/03/frutas-verduras-no-saben.jpg" class="category-image">
+
+<span>Frutas y verduras</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>    
